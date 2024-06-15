@@ -39,11 +39,13 @@ akash = model.generate_content("find the value of pie?")
 
 rs(akash.text)
 
-akash1 = model.generate_content("do you know Knowledge Institute of Technology,at salem in india ?")
+nithil = model.generate_content("do you know Knowledge Institute of Technology(KIOT),kakapalayam, in salem district pincode-637504 ,india?")
 
-rs(akash1.text)
+rs(nithil.text)
 
-akash1.prompt_feedback
+james = model.generate_content("Tell me a joke?")
+
+rs(james.text)
 
 import PIL
 img = PIL.Image.open("download.jpeg")
@@ -53,4 +55,11 @@ model1 = genai.GenerativeModel('gemini-pro-vision')
 
 r1 = model1.generate_content(img)
 rs(r1.text)
+
+img1 = PIL.Image.open("ji.jpeg")
+img1
+
+ui= model1.generate_content(img1)
+
+rs(ui.text)
 
