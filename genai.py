@@ -44,3 +44,13 @@ akash1 = model.generate_content("do you know Knowledge Institute of Technology,a
 rs(akash1.text)
 
 akash1.prompt_feedback
+
+import PIL
+img = PIL.Image.open("download.jpeg")
+img
+
+model1 = genai.GenerativeModel('gemini-pro-vision')
+
+r1 = model1.generate_content(img)
+rs(r1.text)
+
